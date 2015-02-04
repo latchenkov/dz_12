@@ -11,8 +11,6 @@ if (isset($_POST['seller_name']) && isset($_POST['description'])) { // если 
     $post_ad = Ads::trimPOST($_POST);
         $ad=new Ads($post_ad);
         $ad->saveAd();
-header("Location: index.php");
-exit;
 }
 
 // Удаление объявления
